@@ -9,7 +9,7 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 app.get('/', function (req, res) {
 
-res.end('Hello Testing package m');
+res.end('Hello Testing package min');
 });
 
 
