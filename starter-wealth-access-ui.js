@@ -7,8 +7,7 @@ var express = require('express'),
     
 Object.assign=require('object-assign')
 
-app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+
 
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
@@ -17,7 +16,7 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 app.get('/', function (req, res) {
 
-res.end('Hello Testing 3');
+res.end('Hello Testing 4');
 });
 
 
@@ -33,4 +32,4 @@ app.use(function(err, req, res, next){
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
-module.exports = app ;
+
