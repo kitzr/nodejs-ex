@@ -5,7 +5,7 @@ var express = require('express'),
     eps     = require('ejs'),
     morgan  = require('morgan');
     
-Object.assign=require('object-assign')
+
 
 
 
@@ -16,16 +16,9 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 app.get('/', function (req, res) {
 
-res.end('Hello Testing 4');
+res.end('Hello Testing 5 remove object assign');
 });
 
-
-
-// error handling
-app.use(function(err, req, res, next){
-  console.error(err.stack);
-  res.status(500).send('Something bad happened!');
-});
 
 
 
