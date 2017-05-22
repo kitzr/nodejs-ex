@@ -12,5 +12,8 @@
   "engine": {
     "node": "*",
     "npm": "*"
+  },
+  "scripts": {
+    "start": "node starter-wealth-access-ui.js"
   }
 }
