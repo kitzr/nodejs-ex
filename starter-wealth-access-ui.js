@@ -1,6 +1,5 @@
 //  OpenShift sample Node application
 var express = require('express'),
-    fs      = require('fs'),
     app     = express();
 
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
@@ -10,7 +9,7 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 app.get('/', function (req, res) {
 
-res.end('Hello Testing 5 remove object assign');
+res.end('Hello Testing package json');
 });
 
 
