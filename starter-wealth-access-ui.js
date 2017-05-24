@@ -9,13 +9,13 @@ var port = process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
 app.get('/', function (req, res) {
 
-res.end('Hello Testing package minimum final');
+res.end('Welcome to test');
 });
 
 
 
 
 app.listen(port, ip);
-console.log('Server running on http://%s:%s', ip, port);
+console.log('Server running on test http://%s:%s', ip, port);
 
 
